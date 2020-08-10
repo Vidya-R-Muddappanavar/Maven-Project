@@ -18,11 +18,14 @@ public class TC_NewUsersEntry_003 extends BaseClass{
 		Thread.sleep(1000);
 		FWUtiles.verifyPage(driver, enterTimeTrackTitle );
 		a.clickOnUsersTab();
+		FWUtiles.captureScreenShot(driver,"user list");
 		Thread.sleep(1000);
 		CreateNewUsers c=new CreateNewUsers(driver);
 		FWUtiles.verifyPage(driver, userListTitle );
 		c.setcreateNewUser();
+		FWUtiles.captureScreenShot(driver,"create new user");
 		Thread.sleep(1000);
 		c.createUser();
+		FWUtiles.captureScreenShot(driver,"create user");
 	}
 }

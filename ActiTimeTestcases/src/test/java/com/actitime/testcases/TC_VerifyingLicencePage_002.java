@@ -18,7 +18,9 @@ public class TC_VerifyingLicencePage_002 extends BaseClass{
 		Thread.sleep(3000);
 		FWUtiles.verifyPage(driver, enterTimeTrackTitle );
 		a.clickOnSettingsTab();
+		FWUtiles.captureScreenShot(driver,"settings page");
 		a.clickOnLicensesTab();
+		FWUtiles.captureScreenShot(driver,"licence page");
 		Thread.sleep(1000);
 		LicensesPage lcp=new LicensesPage(driver);
 		FWUtiles.verifyPage(driver, licenceTitle);
