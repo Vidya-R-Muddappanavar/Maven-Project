@@ -8,6 +8,8 @@ public interface IAutoCanstant {
 	
 	String URL="http://localhost/login.do";
 	
+	String PHOTO_PATH="./screenshot/";
+	
 	long ITO=20;
 	long ETO=20;
 	

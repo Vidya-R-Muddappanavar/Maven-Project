@@ -5,9 +5,9 @@
   <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="com.actitime.testcases.TC_LoginTest_001"/>
-      <class name="com.actitime.testcases.TC_VerifyingLicencePage_002"/>
+      <!-- <class name="com.actitime.testcases.TC_VerifyingLicencePage_002"/>
       <class name="com.actitime.testcases.TC_NewUsersEntry_003"/>
-      <class name="com.actitime.testcases.TC_DeleteUser_004"/>
+      <class name="com.actitime.testcases.TC_DeleteUser_004"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
