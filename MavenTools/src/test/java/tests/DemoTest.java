@@ -39,14 +39,17 @@ public class DemoTest {
 	}
 	
 
-	public void login_04()
+	public void login_04() throws InterruptedException
 	{
-		WebElement un = driver.findElement(By.id("username"));
+		WebElement un = driver.findElement(By.name("username"));
 		un.sendKeys("admin");
 		WebElement pw = driver.findElement(By.name("pwd"));
 		pw.sendKeys("manager");
-		WebElement lgn = driver.findElement(By.xpath("//div[text()='Login ']"));
+		WebElement keepLoggedInCheckBox=driver.findElement(By.id("keepLoggedInCheckBox"));
+		keepLoggedInCheckBox.click();
+		WebElement lgn = driver.findElement(By.id("loginButton"));
 		lgn.click();
+		Thread.sleep(1000);
 	}
 	
 	public void closeApplication_05()
@@ -55,15 +58,15 @@ public class DemoTest {
 	}
 	
 	@Test
-	public void Demo_test_01()
+	public void Demo_test_01() throws InterruptedException
 	{
-		Reporter.log("from demoootest",true);
+		Reporter.log("from demotest",true);
 		DemoTest a=new DemoTest();
 		//a.openBrowser_02("chrome");
 		driver.manage().window().maximize();
 		a.openApplication_03();
 		a.login_04();
-		Reporter.log("from demoootest",true);
+		//Reporter.log("from demoootest",true);
 		//a.closeApplication_05();
 	}
 }

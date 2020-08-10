@@ -8,7 +8,7 @@ public class DemooTest {
 	@Test
 	public void tc_01()
 	{
-		Reporter.log("from demotest",true);
+		Reporter.log("from DEMOOTEST",true);
 	}
 
 }

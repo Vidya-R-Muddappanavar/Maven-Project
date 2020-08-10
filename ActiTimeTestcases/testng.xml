@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.actitime.testcases.TC_LoginTest_001"/>
+      <class name="com.actitime.testcases.TC_VerifyingLicencePage_002"/>
+      <class name="com.actitime.testcases.TC_NewUsersEntry_003"/>
+      <class name="com.actitime.testcases.TC_DeleteUser_004"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
